@@ -29,8 +29,24 @@ function Football(){
   );
 }
 
+function MissedGoal(){
+  return <h1>MISSED!</h1>
+}
+
+function MadeGoal(){
+  return <h1>GOAL!</h1>
+}
+
+function Goal(props){
+  const isGoal = props.isGoal;
+  if(isGoal){
+    return <MadeGoal/>
+  }
+  return <MissedGoal/>
+}
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<Football />);
+root.render(<Goal />);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
