@@ -1,7 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import Car from './car'; 
-import React from 'react';
+
 
 
 function App() {
@@ -9,7 +8,6 @@ function App() {
     <div className="App">
       <header className="App-header">
       hello world!
-      <Car />
       </header>
     </div>
   );
