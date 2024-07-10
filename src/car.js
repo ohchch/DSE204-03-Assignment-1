@@ -1,7 +1,4 @@
-import React from 'react';
-
-function Car() {
-  return <h3>I am a car</h3>;
+function Car(){
+    return <h2>hi ,i am a car</h2>
 }
-
 export default Car;
