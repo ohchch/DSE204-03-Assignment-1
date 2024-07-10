@@ -12,11 +12,13 @@ return <h2>
 }
 
 function Garage() {
-  const Bicycleinfo = {name: "ford",model: "Mustang"};
+  const table = ['rount','Oval','Square'];
   return (    
     <>
       <h3>I am Green</h3>
-      <Bicycle brand={Bicycleinfo} />
+      <ul>
+        {table.map((table) => <Table brand = {table}/>)}
+      </ul>
     </>
   );
 }
@@ -45,8 +47,12 @@ function Goal(props){
   return <MissedGoal/>
 }
 
+function Table(props){
+  return <li>I am a {props.brand}</li>
+}
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<Goal isGoal={true} />);
+root.render(<Garage />);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
